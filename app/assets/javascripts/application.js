@@ -17,11 +17,11 @@
 //= require turbolinks
 //= require_tree .
 
-// scroll_bottom = function() {
-//   if ($('#messages').length > 0) {
-//     $('#messages').scrollTop($('#messages')[0].scrollHeight);
-//   }
-// }
+scroll_bottom = function() {
+  if ($('#messages').length > 0) {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+  }
+}
 
 submit_message = function() {
   $('#message_body').on('keydown', function(e) {
@@ -40,6 +40,6 @@ $(document).on('turbolinks:load', function(){
   });
 
 	submit_message();
-	 // scroll_bottom();
+	 scroll_bottom();
 })
 
