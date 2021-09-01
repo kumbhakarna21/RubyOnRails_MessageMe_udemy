@@ -17,12 +17,13 @@
 //= require turbolinks
 //= require_tree .
 
+// scrolls to the bottom of chat window
 scroll_bottom = function() {
   if ($('#messages').length > 0) {
     $('#messages').scrollTop($('#messages')[0].scrollHeight);
   }
 }
-
+// enters the ms using enter key 
 submit_message = function() {
   $('#message_body').on('keydown', function(e) {
     if (e.keyCode == 13) {

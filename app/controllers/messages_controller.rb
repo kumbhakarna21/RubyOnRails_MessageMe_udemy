@@ -15,6 +15,7 @@ before_action :require_user
  private
 
   def message_params
+    # whitelisting this params
     params.require(:message).permit(:body)
   end
 
